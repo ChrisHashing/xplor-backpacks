@@ -1,0 +1,77 @@
+.loadingContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0f0f0f;
+}
+
+.loading {
+    display: flex;
+    gap: 5px;
+}
+
+.loadingText {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4cafef;
+    animation: bounce 1.2s infinite ease-in-out;
+}
+
+.loadingText:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.loadingText:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.loadingText:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.loadingText:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.loadingText:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.loadingText:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.loadingText:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.completeButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #007bb5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.completeButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}

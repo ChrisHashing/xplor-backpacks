@@ -1,0 +1,43 @@
+.xplore_section {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    background-color: #0e0d0d;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #000;
+    background-image: linear-gradient(rgba(34, 34, 34, 0.096), rgba(0, 0, 0, 0)),
+        url('./../../assets/images/about_bg.png');
+    /* Replace with your image path */
+    background-size: contain;
+    background-position: center;
+
+
+    background-blend-mode: multiply;
+}
+
+.xplore_section button {
+    padding: 13px;
+    border-radius: 100px;
+    width: 170px;
+    font-family: "Bowlby One", serif;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 5px solid rgb(210, 210, 210);    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.xplore_section button:hover {
+    transform: scale(1.05);
+    color: rgb(39, 39, 39);
+    border: 5px solid rgb(178, 178, 178);
+}
+
+.main_section {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    background-color: #000000;
+}
